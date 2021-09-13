@@ -37,13 +37,13 @@ def handle_message(message):
     elif "bye" in message:
         finish()
     else:
-        say("I do not understand")
+        say("I do not understand, repeat again")
 
 def finish():
     say("bye baby")
     exit()
 
-print("Vsyo okey")
+print("It works")
 while True:
     command = listen()
     handle_message(command)
